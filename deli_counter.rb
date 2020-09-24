@@ -4,7 +4,7 @@ def line(katz_deli)
   if katz_deli.empty?
     puts "The line is currently empty."
   else
-    line_with_position = [] 
+    line_with_position = []
     position = 1
     katz_deli.each do |customer_name|
       line_with_position << "#{position}. #{customer_name}"
@@ -18,11 +18,11 @@ end
 #   katz_deli << new_customer
 #   puts "Welcome, #{new_customer}. You are number #{(katz_deli.length)} in line."
 # end
-$count=0 
-katz_deli = [] 
+$count=0
+katz_deli = []
 def take_a_number(katz_deli)
   $count +=1
-  katz_deli << $count 
+  katz_deli << $count
   puts katz_deli
   puts "Welcome, You are number #{$count} in line."
 end
