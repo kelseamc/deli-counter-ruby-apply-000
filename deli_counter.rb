@@ -18,9 +18,10 @@ end
 #   katz_deli << new_customer
 #   puts "Welcome, #{new_customer}. You are number #{(katz_deli.length)} in line."
 # end
-$count=0
+
 katz_deli = []
 def take_a_number(katz_deli)
+  $count=0
   $count +=1
   katz_deli << $count
   puts katz_deli
